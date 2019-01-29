@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.vimukt.pet.demo</groupId>
+  <artifactId>karate-test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>			</description>
+  
+  
+   
+   
+  <properties>
+        <junit.version>4.12</junit.version>
+        <karate.version>0.9.1</karate.version>
+        <maven.compiler.version>3.6.0</maven.compiler.version>
+        <cucumber.reporting.version>3.8.0</cucumber.reporting.version>
+    </properties>
+
+    <dependencies>
+           
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-core</artifactId>
+            <version>${karate.version}</version>
+        </dependency>
+       
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit4</artifactId>
+            <version>${karate.version}</version>
+            
+        </dependency>	
+        
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
+            <version>${karate.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>${cucumber.reporting.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+    </dependencies>
+    
+    
+     <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+    
+            </plugin>
+        </plugins>        
+    </build>       
+    
+    
+</project>

@@ -1,0 +1,19 @@
+09:52:13.916 karate.env system property was: null 
+09:52:13.923 request:
+1 > GET https://petstore.swagger.io/v2/pet/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: petstore.swagger.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_131)
+
+09:52:14.632 response time in milliseconds: 707.71
+1 < 200
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Origin: *
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Tue, 29 Jan 2019 22:52:14 GMT
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":1,"category":{"id":1,"name":"Pug"},"name":"Charlie Chaplin","photoUrls":["https://giphy.com/gifs/puppy-high-five-o22WjU9bIgFWM"],"tags":[{"id":0,"name":"dog1"}],"status":"available"}
+
